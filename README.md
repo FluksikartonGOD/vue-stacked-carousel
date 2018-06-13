@@ -30,8 +30,8 @@ export default {
 | Prop    | Data Type | Required | Description        |
 | ------- | --------- | -------- | ------------------ |
 | `items`   | Array    | true     | Your array with data      |
-| `itemDepthRatio` | Number    |          | Depth in pixels from each item |
-| `itemDistance` | Number    |          | Distance in pixels between each item |
+| `itemDepthRatio` | Number    |          | Depth in pixels from each item  default (120px)|
+| `itemDistance` | Number    |          | Distance in pixels between each item default (60px)  |
 | `transitionDuration` | Number    |          | Duration of animation between items (0.3 default) |
 | `transitionTimingFunction` | String    |          | default (ease-in-out) |
 | `arrowDistnace` | String    |          | Arrow distance in % default (70%) |

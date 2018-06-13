@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "vue": "^2.5.16",
-    "vue-awesome": "^3.0.0",
     "vue2-touch": "^1.0.7"
   },
   "main": "./dist/vue-stacked-carousel.common.js",

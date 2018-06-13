@@ -1,0 +1,68 @@
+{
+  "name": "vue-stacked-carousel",
+  "version": "1.0.5",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name vue-stacked-carousel ./src/components/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "author": {
+    "name": "Georgi Antonov",
+    "email": "gantonovfe@gmail.com"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-carousel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluksikartonGOD/vue-stacked-carousel.git"
+  },
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-awesome": "^3.0.0",
+    "vue2-touch": "^1.0.7"
+  },
+  "main": "./dist/vue-stacked-carousel.common.js",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.12",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.12",
+    "@vue/cli-service": "^3.0.0-beta.12",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "license": "MIT",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "files": [
+    "dist/vue-stacked-carousel.common.js"
+  ]
+}

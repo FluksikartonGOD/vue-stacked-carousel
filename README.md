@@ -1,22 +1,14 @@
 # vue-stacked-carousel
 
-> Vue stacked carousel component
-
-### vue-stacked-carousel is a vue carousel component
-
 ## Installation
 
+```
 npm install vue-stacked-carousel
 ```
 
-# API
-
-## VueStackedCarousel
 
 ```js
 import { VueStackedCarousel } from 'vue-stacked-carousel';
-
-// usage in local component
 
 export default {
   components: {
@@ -58,23 +50,23 @@ data() {
     vueStackedCarouselItems: [
       {
         title: 'A',
-        description: 'Gut angepasste Zahnreinigung ergeben ein völlig natürliches Zahngefühl und Zahnkosmetik und stören somit auch das Kausystem nicht',
+        description: 'Something else here',
       },
       {
         title: 'B',
-        description: 'Gut angepasste Zahnreinigung ergeben ein völlig natürliches Zahngefühl und Zahnkosmetik und stören somit auch das Kausystem nicht',
+        description: 'Something else here',
       },
       {
         title: 'C',
-        description: 'Gut angepasste Zahnreinigung ergeben ein völlig natürliches Zahngefühl und Zahnkosmetik und stören somit auch das Kausystem nicht',
+        description: 'Something else here',
       },
       {
         title: 'D',
-        description: 'Gut angepasste Zahnreinigung ergeben ein völlig natürliches Zahngefühl und Zahnkosmetik und stören somit auch das Kausystem nicht',
+        description: 'Something else here',
       },
       {
         title: 'E',
-        description: 'Gut angepasste Zahnreinigung ergeben ein völlig natürliches Zahngefühl und Zahnkosmetik und stören somit auch das Kausystem nicht',
+        description: 'Something else here',
       },
     ],
   };

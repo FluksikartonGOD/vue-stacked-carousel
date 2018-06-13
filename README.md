@@ -36,7 +36,7 @@ export default {
 | `transitionTimingFunction` | String    |          | default (ease-in-out) |
 | `arrowDistnace` | String    |          | Arrow distance in % default (70%) |
 
-####Basic Usage
+###Basic Usage
 ```html
 <vue-stacked-carousel :items="vueStackedCarouselItems">
   <div slot-scope="{ item, index, opacity }" class="card">

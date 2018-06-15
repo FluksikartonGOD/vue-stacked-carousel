@@ -1,7 +1,7 @@
 {
   "name": "vue-stacked-carousel",
   "description": "stacked carousel with perspective",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

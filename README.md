@@ -90,6 +90,12 @@ data() {
     transition: opacity .3s linear;
     user-select: none;
   }
+  .vue-stacked-carousel-arrow.arrow-left {
+    left: -70%;
+  }
+  .vue-stacked-carousel-arrow.arrow-right {
+    right: -70%;
+  }
 </style>
 ```
 
@@ -101,8 +107,10 @@ data() {
 | `itemDepthRatio` | Number    |          | Depth in pixels from each item  default (120px)|
 | `itemDistance` | Number    |          | Distance in pixels between each item default (60px)  |
 | `transitionDuration` | Number    |          | Duration of animation between items (0.3 default) |
+| `transitionWait` | Boolean    |          | Default is (true), if set to false, it will not wait the transition to end on arrow click|
 | `transitionTimingFunction` | String    |          | default (ease-in-out) |
-| `arrowDistnace` | String    |          | Arrow distance in % default (70%) |
+| `arrowLeftClass` | String    |          | default (arrow-left) |
+| `arrowRightClass` | String    |          | default (arrow-right) |
 
 
 ## Author

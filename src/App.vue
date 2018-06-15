@@ -67,5 +67,11 @@
     transition: opacity .3s linear;
     user-select: none;
   }
+  .vue-stacked-carousel-arrow.arrow-left {
+    left: -70%;
+  }
+  .vue-stacked-carousel-arrow.arrow-right {
+    right: -70%;
+  }
 </style>
 

@@ -4,10 +4,10 @@
       <div v-for="(item, index) in items" :key="index" class="vue-stacked-carousel-item" :style="itemStyle(index).style">
         <slot :item="item" :index="index" :opacity="itemStyle(index).opacity"></slot>
       </div>
-      <div class="vue-stacked-carousel-arrow" :style="`left: -${arrowDistnace}`" @click="slidePrev">
+      <div class="vue-stacked-carousel-arrow" :class="arrowLeftClass" @click="slidePrev">
         <slot name="arrow-left"></slot>
       </div>
-      <div class="vue-stacked-carousel-arrow" :style="`right: -${arrowDistnace}`" @click="slideNext">
+      <div class="vue-stacked-carousel-arrow" :class="arrowRightClass" @click="slideNext">
         <slot name="arrow-right"></slot>
       </div>
     </div>
@@ -34,13 +34,21 @@ export default {
       type: Number,
       default: 0.3,
     },
+    transitionWait: {
+      type: Boolean,
+      default: true,
+    },
     transitionTimingFunction: {
       type: String,
       default: 'ease-in-out',
     },
-    arrowDistnace: {
+    arrowLeftClass: {
       type: String,
-      default: '70%',
+      default: 'arrow-left',
+    },
+    arrowRightClass: {
+      type: String,
+      default: 'arrow-right',
     },
   },
   data() {
@@ -113,14 +121,16 @@ export default {
         return;
       }
       this.currentItem += 1;
-      this.setAnimation();
+      if (this.transitionWait)
+        this.setAnimation();
     },
     slidePrev() {
       const check = this.currentItem === 0;
       if (check || this.inAnimation)
         return;
       this.currentItem -= 1;
-      this.setAnimation();
+      if (this.transitionWait)
+        this.setAnimation();
     },
     swipe(e) {
       if (e === 'swipeleft')
@@ -141,7 +151,6 @@ export default {
 <style>
   .vue-stacked-carousel-container {
     position: relative;
-    width: 500px;
     margin-left: auto;
     margin-right: auto;
     height: auto;

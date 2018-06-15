@@ -1,5 +1,7 @@
 # vue-stacked-carousel
 
+**css customizable stacked carousel, [Live Demo](https://fluksikartongod.github.io/vue-stacked-carousel/)**
+
 ## Installation
 
 ```

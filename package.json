@@ -1,12 +1,20 @@
 {
   "name": "vue-stacked-carousel",
-  "version": "1.0.10",
+  "description": "stacked carousel with perspective",
+  "version": "1.0.11",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "NODE_ENV=production vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name vue-stacked-carousel ./src/components/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages-deploy"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "prep": [
+      "build"
+    ]
   },
   "author": {
     "name": "Georgi Antonov",
@@ -14,7 +22,8 @@
   },
   "keywords": [
     "vuejs",
-    "vue-carousel"
+    "vue-carousel",
+    "card-carousel"
   ],
   "repository": {
     "type": "git",
@@ -29,6 +38,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.12",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.12",
     "@vue/cli-service": "^3.0.0-beta.12",
+    "gh-pages-deploy": "^0.5.0",
     "vue-template-compiler": "^2.5.16"
   },
   "babel": {

@@ -3,9 +3,20 @@
 ## Installation
 
 ```
-npm install vue-stacked-carousel
+# install dependencies
+npm install vue2-touch --save
+
+npm install vue-stacked-carousel --save
+
 ```
 
+## Basic Usage
+
+### Use Vue2Touch 
+```js
+import Vue2Touch from 'vue2-touch'
+Vue.use(Vue2Touch)
+```
 
 ```js
 import { VueStackedCarousel } from 'vue-stacked-carousel';
@@ -16,19 +27,6 @@ export default {
   }
 };
 ```
-
-#### Props
-
-| Prop    | Data Type | Required | Description        |
-| ------- | --------- | -------- | ------------------ |
-| `items`   | Array    | true     | Your array with data      |
-| `itemDepthRatio` | Number    |          | Depth in pixels from each item  default (120px)|
-| `itemDistance` | Number    |          | Distance in pixels between each item default (60px)  |
-| `transitionDuration` | Number    |          | Duration of animation between items (0.3 default) |
-| `transitionTimingFunction` | String    |          | default (ease-in-out) |
-| `arrowDistnace` | String    |          | Arrow distance in % default (70%) |
-
-#### Basic Usage
 
 ```html
 <vue-stacked-carousel :items="vueStackedCarouselItems">
@@ -43,7 +41,6 @@ export default {
   <span slot="arrow-right">arrow</span>
 </vue-stacked-carousel>
 ```
-
 ```js
 data() {
   return {
@@ -93,6 +90,19 @@ data() {
   }
 </style>
 ```
+
+## Props
+
+| Prop    | Data Type | Required | Description        |
+| ------- | --------- | -------- | ------------------ |
+| `items`   | Array    | true     | Your array with data      |
+| `itemDepthRatio` | Number    |          | Depth in pixels from each item  default (120px)|
+| `itemDistance` | Number    |          | Distance in pixels between each item default (60px)  |
+| `transitionDuration` | Number    |          | Duration of animation between items (0.3 default) |
+| `transitionTimingFunction` | String    |          | default (ease-in-out) |
+| `arrowDistnace` | String    |          | Arrow distance in % default (70%) |
+
+
 ## Author
 
 &#169; [Georgi Antonov]

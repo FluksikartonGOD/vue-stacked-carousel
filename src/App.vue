@@ -15,14 +15,12 @@
 </template>
 
 <script>
-  import VueStackedCarousel from './components/VueStackedCarouselExtended.vue';
-  import VueStackedCarouselExtended from './components/VueStackedCarouselExtended.vue';
+  import { VueStackedCarousel } from './components/index';
 
   export default {
     name: 'app',
     components: {
       VueStackedCarousel,
-      VueStackedCarouselExtended,
     },
    data() {
     return {
